@@ -6,4 +6,14 @@
     <include file = "$(find quetzalcoders_autonomousnavigation_puzzlebot)/launch/include/gazebo.launch"/>
     -->
     <node name = "rviz" pkg = "rviz" type = "rviz" required = "true"/> 
+    <!-- 
+    Rviz Maping Launch Files 
+    <include file = "$(find uetzalcoders_autonomousnavigation_puzzlebot)/launch/include/rviz/rviz_maping.launch"/>
+    <include file = "$(find uetzalcoders_autonomousnavigation_puzzlebot)/launch/include/rviz/start_maping.launch"/>
+    -->
+    <!-- 
+    Rviz Navigation Launch Files 
+    <include file = "$(find uetzalcoders_autonomousnavigation_puzzlebot)/launch/include/rviz/rviz_navigation.launch"/>
+    <include file = "$(find uetzalcoders_autonomousnavigation_puzzlebot)/launch/include/rviz/start_navigation.launch"/>
+    -->
 </launch>
