@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<robot name = "Puzzlebot Jetson-Lidar">
+
+    <link name = "base_link"/> <!-- DUMMY LINK TO FIZ ROBOT CHASSIS -->
+  
+    <joint name = "chassis_joint" type = "fixed">
+        <parent link = "base_link"/>
+        <child link = "chassis"/>
+        <origin xyz = "0 0 0.05"/>
+    </joint>
+
+    <link name = "chassis">
+        <inertial>
+            <origin xyz = "0 0 0" rpy = "0 0 0"/>
+            <mass value = "0.01" />
+            <inertia ixx = "7.58333333333e-06" ixy = "0.0" ixz = "0.0" iyy = "7.58333333333e-06" 
+                        iyz = "0.0" izz = "1.25e-05"/>
+        </inertial>
+        <collision>
+            <origin rpy = "1.57079632679 0 1.57079632679" xyz = "0 0 0.05"/>
+            <geometry>
+                <mesh filename = "package://quetzalcoders_autonomousnavigation_puzzlebot/models/MCR2_1000_13_Chassis.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin rpy = "1.57079632679 0 1.57079632679" xyz = "0 0 0.05"/>
+            <geometry>
+                <mesh filename="package://quetzalcoders_autonomousnavigation_puzzlebot/models/MCR2_1000_13_Chassis.stl"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name = "chassis_joint_wR" type = "continuous">
+        <parent link = "chassis"/>
+        <child link = "rightWheel"/>
+        <origin xyz = "0.05 -0.097 0.05"/>
+        <axis xyz = "0 1 0"/>
+    </joint>
+
+    <link name = "rightWheel">
+        <collision>
+            <origin rpy = "1.57079632679 0 3.141592654" xyz = "0 0 0"/>
+            <geometry>
+                <mesh filename = "package://quetzalcoders_autonomousnavigation_puzzlebot/models/MCR2_1000_1_1_Wheel_Coupler_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin rpy = "1.57079632679 0 3.141592654" xyz = "0 0 0"/>
+            <geometry>
+                <mesh filename="package://quetzalcoders_autonomousnavigation_puzzlebot/models/MCR2_1000_1_1_Wheel_Coupler_2.stl"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name = "chassis_joint_wL" type = "continuous">
+        <parent link = "chassis"/>
+        <child link = "leftWheel"/>
+        <origin xyz = "0.05 0.097 0.05"/>
+        <axis xyz = "0 1 0"/>
+    </joint>
+
+    <link name = "leftWheel">
+        <collision>
+            <origin rpy = "1.57079632679 0 0" xyz = "0 0 0"/>
+            <geometry>
+                <mesh filename="package://quetzalcoders_autonomousnavigation_puzzlebot/models/MCR2_1000_1_1_Wheel_Coupler_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin rpy = "1.57079632679 0 0" xyz = "0 0 0"/>
+            <geometry>
+                <mesh filename="package://quetzalcoders_autonomousnavigation_puzzlebot/models/MCR2_1000_1_1_Wheel_Coupler_2.stl"/>
+            </geometry>
+        </visual>
+    </link>
+</robot>
