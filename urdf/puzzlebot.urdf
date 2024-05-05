@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot name = "Puzzlebot Jetson-Lidar">
+<robot name = "Puzzlebot Jetson-Lidar Ed.">
 
     <link name = "base_link"/> <!-- DUMMY LINK TO FIZ ROBOT CHASSIS -->
   
@@ -30,7 +30,7 @@
         </visual>
     </link>
 
-    <joint name = "chassis_joint_wR" type = "continuous">
+    <joint name = "chassis_joint_wR" type = "fixed">
         <parent link = "chassis"/>
         <child link = "rightWheel"/>
         <origin xyz = "0.05 -0.097 0.05"/>
@@ -52,7 +52,7 @@
         </visual>
     </link>
 
-    <joint name = "chassis_joint_wL" type = "continuous">
+    <joint name = "chassis_joint_wL" type = "fixed">
         <parent link = "chassis"/>
         <child link = "leftWheel"/>
         <origin xyz = "0.05 0.097 0.05"/>

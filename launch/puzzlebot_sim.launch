@@ -6,8 +6,8 @@
         <node pkg = "quetzalcoders_autonomousnavigation_puzzlebot" type = "puzzlebot_odometry.py" name = "puzzlebot_kinematic_model"/>
         <node pkg = "quetzalcoders_autonomousnavigation_puzzlebot" type = "wheelsMovement.py" name = "wheelsMovement"/>
         <node pkg = "quetzalcoders_autonomousnavigation_puzzlebot" type = "chassisMovement.py" name = "chassisMovement"/>
-        <node pkg = "robot_state_publisher" type = "robot_state_publisher" name = "continuos_test_pub"/>
-        <!-- <node name = "joint_state_publisher_gui" pkg = "joint_state_publisher_gui" 
-                type = "joint_state_publisher_gui"/> -->
+        <node pkg = "robot_state_publisher" type = "robot_state_publisher" name = "continuous_test_pub"/>
+        <node name = "joint_state_publisher_gui" pkg = "joint_state_publisher_gui" 
+                type = "joint_state_publisher_gui"/>
         <node name = "rviz" pkg = "rviz" type = "rviz" required = "true"/> 
 </launch>
