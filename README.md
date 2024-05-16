@@ -21,10 +21,32 @@ Este repositorio se encuentra construido de la siguiente forma:
         - spawner.launch: Spawnea el Puzzlebot en el Gazebo.
       - gazebo.launch: Inicia el mapa en gazebo.
     - simulation.launch: Es el archivo launch que nos ayuda a inicializar todo el proyecto, como ejecutable.                             Los nodos, topicos, y llamar a los demas elementos como rviz, gazebo, el robot, el                              mapa, etc.
-  - models: 
+  - models:
+    - camera.stl
+    - MCR2_1000_1_1_Wheel_Coupler_2.stl
+    - MCR2_1000_13_Chassis.stl
+    - Puzzlebot.stl
   - params
-  - rviz
-  - scripts
+  - rviz:
+    - maping_conf_rviz.rviz
+    - navigation_conf_rviz.rviz
+  - scripts: Aqui es donde se encontraran nuestros codigos desarrollados para cumplir con los                               tasks/challenges solicitados.
+    - chassisMovement.py
+    - puzzlebot_odometry.py
+    - wheelsMovement.py
   - src
-  - urdf
-  - worlds
+  - urdf:
+    - puzzlebot.urdf
+  - worlds:
+    - ADJIC_map.world: Es el mapa
+
+============================================================================================================
+
+  
+
+
+
+
+
+
+
