@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<launch>    
+
+    <!--Robot Description-->
+    <arg name="robot3" value="puzzlebot_jetson_lidar_ed"/>
+
+
+    <!--Initialise World -> Odom Transform -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="world_odom3_tf" args="0  -1   0   0   0   0  world   $(arg robot3)/base_link"/>
+
+    <!--Load xacro model -->
+   <param name="/$(arg robot3)/robot_description" command="$(find xacro)/xacro  '$(find quetzalcoders_autonomousnavigation_puzzlebot)/urdf/puzzlebot_jetson_lidar_ed_v1.xacro'"/>
+   
+
+    <group ns="$(arg robot3)">
+        <!--Robot State Publisher -->
+        <node pkg="robot_state_publisher" type="robot_state_publisher" name="puzzlebot_state_pub" >
+            <remap from="robot_description" to="/$(arg robot3)/robot_description" />
+            <param name="tf_prefix" value="$(arg robot3)" />
+        </node>
+
+        <!-- Uncomment the Joint state publisher if not using a node to publish joint states. If uncommented, comment any node publishing joint states-->
+        <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+    </group>
+
+    <!-- Launch rviz -->
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find quetzalcoders_autonomousnavigation_puzzlebot)/rviz/puzzlebot_test.rviz"/>
+ 
+</launch>
