@@ -44,20 +44,16 @@ Este repositorio se encuentra construido de la siguiente forma:
 
 INSTRUCCIONES PARA CORRER EL PROYECTO: 
 
-1.- git clone (del repositorio en la carpeta de trabajo)
-
+1.- git clone https://github.com/3mi1ian0/quetzalcoders_autonomousnavigation_puzzlebot.git 
+(del repositorio en la carpeta de trabajo)
 
 2.- cd catkin_ws (Carpeta de trabajo)
 
-
 3.- catkin_make
-
 
 4.- cd src
 
-
 5.- cd quetzalcoders_autonomousnavigation_puzzlebot
-
 
 6.- roslaunch quetzalcoders_autonomousnavigation_puzzlebot simulation.launch
   
