@@ -5,7 +5,7 @@
   <arg name="robot" default="puzzlebot_1"/>
 
   <!--Robot 1 Description-->
-  <arg name="robot_description_file" default="puzzlebot_hacker_ed_v1_3.xacro"/>
+  <arg name="robot_description_file" default="puzzlebot_jetson_lidar_ed_v1.xacro"/>
 
   <!--Robot Initial Position-->
   <arg name="x" default="0.0"/>
