@@ -11,7 +11,7 @@
 
         <!-- Gazebo Parameters -->
         <!--<arg name="world_name" default="$(find puzzlebot_gazebo)/worlds/obstacle_avoidance_3.world"/>-->
-        <arg name="world_name" default="$(find puzzlebot_gazebo)/worlds/ADJIC_map.world"/>
+        <arg name="world_name" default="$(find quetzalcoders_autonomousnavigation_puzzlebot)/worlds/ADJIC_map.world"/>
         <arg name="paused" default="false"/>
         <arg name="use_sim_time" default="true"/>
         <arg name="gui" default="true"/>
@@ -30,7 +30,7 @@
         </include>
 
          <!-- Launch Puzzlebot -->
-        <include file="$(find puzzlebot_gazebo)/launch/puzzlebot_spawner.launch">
+        <include file="$(find quetzalcoders_autonomousnavigation_puzzlebot)/launch/puzzlebot_spawner.launch">
             <arg name="robot" value="$(arg robot_name)"/>
             <arg name="robot_description_file" value="$(arg robot_description_file)"/>
             <arg name="x" value="$(arg pos_x)"/>

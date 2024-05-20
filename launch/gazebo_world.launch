@@ -3,7 +3,7 @@
     <launch>
 
         <!-- Gazebo Parameters -->
-        <arg name="world_name" default="$(find puzzlebot_gazebo)/worlds/ADJIC_map.world"/>
+        <arg name="world_name" default="$(find quetzalcoders_autonomousnavigation_puzzlebot)/worlds/ADJIC_map.world"/>
         <arg name="paused" default="false"/>
         <arg name="use_sim_time" default="true"/>
         <arg name="gui" default="true"/>

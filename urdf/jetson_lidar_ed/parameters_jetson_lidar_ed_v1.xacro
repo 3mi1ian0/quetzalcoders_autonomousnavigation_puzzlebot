@@ -417,15 +417,15 @@
             <xacro:property name="lidar_pos_w" value="0.0"/>
 
     <!--Meshes -->
-        <xacro:property name="mesh_puzzlebot_chassis"  value="$(find puzzlebot_description)/meshes/bases/MCR2_puzzlebot_chassis_v1_2.stl" />
-        <xacro:property name="mesh_puzzlebot_motor_left"  value="$(find puzzlebot_description)/meshes/misc/MCR2_dc_motor_left.stl" />
-        <xacro:property name="mesh_puzzlebot_motor_right"  value="$(find puzzlebot_description)/meshes/misc/MCR2_dc_motor_right.stl" />
-        <xacro:property name="mesh_puzzlebot_wheel"  value="$(find puzzlebot_description)/meshes/wheels/MCR2_puzzlebot_wheel.stl" />
-        <xacro:property name="mesh_puzzlebot_caster"  value="$(find puzzlebot_description)/meshes/wheels/MCR2_puzzlebot_casterball.stl" />
-        <xacro:property name="mesh_puzzlebot_battery"  value="$(find puzzlebot_description)/meshes/misc/MCR2_puzzlebot_battery.stl" />
-        <xacro:property name="mesh_puzzlebot_jetson"  value="$(find puzzlebot_description)/meshes/misc/MCR2_nvidia_jetson_v1_2.stl" />
-        <xacro:property name="mesh_puzzlebot_camera"  value="$(find puzzlebot_description)/meshes/sensors/MCR2_puzzlebot_camera.stl" />
-        <xacro:property name="mesh_puzzlebot_lidar_base"  value="$(find puzzlebot_description)/meshes/bases/MCR2_puzzlebot_lidar_base_v1.stl" />
-        <xacro:property name="mesh_puzzlebot_lidar_sensor"  value="$(find puzzlebot_description)/meshes/sensors/MCR2_puzzlebot_lidar_sensor_v1.stl" />
+        <xacro:property name="mesh_puzzlebot_chassis"  value="$(find quetzalcoders_autonomousnavigation_puzzlebot)/meshes/bases/MCR2_puzzlebot_chassis_v1_2.stl" />
+        <xacro:property name="mesh_puzzlebot_motor_left"  value="$(find quetzalcoders_autonomousnavigation_puzzlebot)/meshes/misc/MCR2_dc_motor_left.stl" />
+        <xacro:property name="mesh_puzzlebot_motor_right"  value="$(find quetzalcoders_autonomousnavigation_puzzlebot)/meshes/misc/MCR2_dc_motor_right.stl" />
+        <xacro:property name="mesh_puzzlebot_wheel"  value="$(find quetzalcoders_autonomousnavigation_puzzlebot)/meshes/wheels/MCR2_puzzlebot_wheel.stl" />
+        <xacro:property name="mesh_puzzlebot_caster"  value="$(find quetzalcoders_autonomousnavigation_puzzlebot)/meshes/wheels/MCR2_puzzlebot_casterball.stl" />
+        <xacro:property name="mesh_puzzlebot_battery"  value="$(find quetzalcoders_autonomousnavigation_puzzlebot)/meshes/misc/MCR2_puzzlebot_battery.stl" />
+        <xacro:property name="mesh_puzzlebot_jetson"  value="$(find quetzalcoders_autonomousnavigation_puzzlebot)/meshes/misc/MCR2_nvidia_jetson_v1_2.stl" />
+        <xacro:property name="mesh_puzzlebot_camera"  value="$(find quetzalcoders_autonomousnavigation_puzzlebot)/meshes/sensors/MCR2_puzzlebot_camera.stl" />
+        <xacro:property name="mesh_puzzlebot_lidar_base"  value="$(find quetzalcoders_autonomousnavigation_puzzlebot)/meshes/bases/MCR2_puzzlebot_lidar_base_v1.stl" />
+        <xacro:property name="mesh_puzzlebot_lidar_sensor"  value="$(find quetzalcoders_autonomousnavigation_puzzlebot)/meshes/sensors/MCR2_puzzlebot_lidar_sensor_v1.stl" />
 
 </robot>

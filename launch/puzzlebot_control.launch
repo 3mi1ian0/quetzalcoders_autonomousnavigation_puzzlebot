@@ -6,15 +6,15 @@
 
 
   <!-- Load controller configurations from YAML file to parameter server -->
-  <rosparam file="$(find puzzlebot_control)/config/puzzlebot_diff_control.yaml" command="load" />
-  <rosparam file="$(find puzzlebot_control)/config/puzzlebot_gazebo_control.yaml" command="load" />
-  <rosparam file="$(find puzzlebot_control)/config/puzzlebot_joint_states.yaml" command="load" />
+  <rosparam file="$(find quetzalcoders_autonomousnavigation_puzzlebot)/config/puzzlebot_diff_control.yaml" command="load" />
+  <rosparam file="$(find quetzalcoders_autonomousnavigation_puzzlebot)/config/puzzlebot_gazebo_control.yaml" command="load" />
+  <rosparam file="$(find quetzalcoders_autonomousnavigation_puzzlebot)/config/puzzlebot_joint_states.yaml" command="load" />
     
   <!--Spawn controller -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"
     args="joint_state_controller base_controller">
   </node>
 
-  <node name="wheel_vel" pkg="puzzlebot_control" type="wheel_vel.py"  output="screen"/>
+  <node name="wheel_vel" pkg="quetzalcoders_autonomousnavigation_puzzlebot" type="wheel_vel.py"  output="screen"/>
 
 </launch>

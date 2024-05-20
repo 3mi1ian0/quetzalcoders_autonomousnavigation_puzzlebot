@@ -18,7 +18,7 @@
   <arg name="wl_topic" default="wl"/>
     
   <!--Load robot description-->
-  <param name="/$(arg robot)/robot_description" command="$(find xacro)/xacro '$(find puzzlebot_description)/urdf/$(arg robot_description_file)' prefix:=$(arg robot)" />
+  <param name="/$(arg robot)/robot_description" command="$(find xacro)/xacro '$(find quetzalcoders_autonomousnavigation_puzzlebot)/urdf/$(arg robot_description_file)' prefix:=$(arg robot)" />
 
   <group ns="$(arg robot)">
   
@@ -37,7 +37,7 @@
     <!--Robot controller-->
     <remap from="/$(arg robot)/wr" to="$(arg wr_topic)" />
     <remap from="/$(arg robot)/wl" to="$(arg wl_topic)" />
-    <include file="$(find puzzlebot_control)/launch/puzzlebot_control.launch">
+    <include file="$(find quetzalcoders_autonomousnavigation_puzzlebot)/launch/puzzlebot_control.launch">
         <arg name="robot" value="$(arg robot)"/>
     </include>
 
